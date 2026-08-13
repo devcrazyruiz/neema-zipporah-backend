@@ -15,7 +15,9 @@ const teacherRoutes = require("./routes/teacherRoutes");
 const parentRoutes = require("./routes/parentRoutes");
 const feeRoutes = require("./routes/feeRoutes");
 const staffRoutes = require("./routes/staffRoutes");
+
 const contactRoutes = require("./routes/contactRoutes");
+const accountantRoutes = require("./routes/accountantRoutes");
 
 connectDB();
 
@@ -53,6 +55,7 @@ app.use("/api/teacher", teacherRoutes);
 app.use("/api/parent", parentRoutes);
 app.use("/api/fees", feeRoutes);
 app.use("/api/admin/staff", staffRoutes);
+app.use("/api/accountant", accountantRoutes);
 app.use("/api/contact", contactRoutes);
 
 // --- Error handling (must be last) ---
