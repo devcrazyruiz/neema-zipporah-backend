@@ -18,8 +18,7 @@ function getTransporter() {
 }
 
 /**
- * Send an email. Fails silently (logs only) so that email issues never
- * block a core request like signup or payment confirmation.
+ 
  * @param {{to: string, subject: string, html: string, text?: string}} options
  */
 async function sendEmail({ to, subject, html, text }) {
